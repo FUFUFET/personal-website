@@ -1,0 +1,23 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: nunito;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  margin: 0.2rem;
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
