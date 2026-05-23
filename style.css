@@ -1,51 +1,181 @@
 html {
   margin: 0;
+  overscroll-behavior: none;
 }
+
 body {
   margin: 0;
   background-color: #fafafa;
   font-family: nunito;
+  font-size: 1.5rem;
+}
+header {
+  background-color: #1a1a1a;
+}
+
+a {
+  color: #fff;
+  padding: 0.7rem;
+}
+a:hover {
+  background-color: #fff;
+  color: black;
+}
+a:focus {
+  outline: #fff 2px solid;
 }
 h1 {
-  margin: 0 1rem;
+  margin: 2rem 0;
+  display: grid;
+  place-self: center;
+}
+h2 {
+  margin: 1rem;
 }
 p {
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
-header nav ul {
-  display: flex;
+ul {
   list-style: none;
-  justify-content: space-evenly;
 }
-header nav ul li {
+
+header > nav > ul {
+  display: flex;
+
+  justify-content: space-evenly;
+  background-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  height: 5em;
+  align-items: center;
+}
+/* header nav ul li {
   margin: 0.2rem;
+} */
+fieldset > ul {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+fieldset {
+  border: none;
+  text-align: center;
+}
+legend {
+  font-size: 2rem;
 }
 
-footer nav ul {
+.form-list {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 50rem;
+  justify-content: center;
+  text-align: left;
+}
+input,
+textarea {
+  font-size: 1.5rem;
+  border-color: #1a1a1a;
+  background: #fff;
+  color: #000;
+}
+textarea {
+  min-height: 10rem;
+}
+input:focus,
+textarea:focus {
+  outline: 2px solid #215e9f;
+  outline-offset: 2px;
+}
+
+#sendMessage {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #1a1a1a;
+}
+#email,
+#name,
+#subject {
+  size: 30;
+  height: 2rem;
+}
+
+footer > nav > ul {
+  display: flex;
+
   justify-content: space-evenly;
+  background-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  height: 10rem;
+  align-items: center;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 
+footer > p {
+  /* display: grid;
+  justify-self: end; */
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: end;
+
+  margin-bottom: 0;
+}
+
 @media (width <= 500px) {
+  body {
+    font-size: 1rem;
+    /* min-height: 100vh; */
+  }
   header nav ul {
     padding: 0;
-    margin: 0;
-    background-color: #1a1a1a;
-    color: #fff;
-  }
-  header {
-    display: grid;
-    place-items: center;
-    background-color: #1a1a1a;
+
+    height: 3rem;
   }
   a {
-    color: #fff;
+    padding: 0.2rem;
+  }
+  header nav ul li {
+    margin: 0.5rem;
+  }
+
+  /* header {
+    display: grid;
+    place-items: center;
+    
+  } */
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  #email,
+  #name,
+  #subject {
+    height: 1rem;
+  }
+
+  footer nav ul {
+    padding: 0;
+
+    height: 4rem;
+  }
+  footer nav ul li {
+    margin: 0.5rem;
+  }
+  footer p {
+    margin: 0;
     font-size: 0.6rem;
   }
 }

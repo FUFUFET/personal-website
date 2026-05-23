@@ -10,11 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>contact</title>
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <img src="" />
       <nav>
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -25,19 +24,36 @@
       </nav>
     </header>
     <main>
-      <h1>Welcome to my website.</h1>
-      <img alt="Ken Sumiyoshi" />
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+      <h1>I'd love to connect!</h1>
+      <form>
+        <fieldset>
+          <legend>Contact me.</legend>
+          <p>All the fields are required.</p>
+          <ul>
+            <li class="form-list">
+              <label for="name">Name</label>
+              <input type="text" id="name" required autocomplete="name" />
+            </li>
+            <li class="form-list">
+              <label for="email">Email</label>
+              <input type="text" id="email" required autocomplete="email" />
+            </li>
+            <li class="form-list">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" required />
+            </li>
+            <li class="form-list">
+              <label for="message">Message</label>
+              <textarea id="message" required></textarea>
+            </li>
+          </ul>
+          <div id="sendMessage">
+            <span id="contact-title">Send a message</span>
+            <input type="submit" value="Send" aria-labelledby="contact-title" />
+          </div>
+        </fieldset>
+        <!-- Error message impelementaion, server connection need to be added in the future. -->
+      </form>
     </main>
     <footer>
       <nav>
@@ -48,6 +64,7 @@
           <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
       </nav>
+      <p>© Ken Sumiyoshi, 2026 - 202X</p>
     </footer>
   </body>
 </html>
