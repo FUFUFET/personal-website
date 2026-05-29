@@ -95,7 +95,10 @@ textarea:focus {
 #sendMessage {
   margin-bottom: 1rem;
 }
-
+#contact-title:hover {
+  background-color: #fff;
+  color: #215e9f;
+}
 footer {
   background: #1a1a1a;
 }
